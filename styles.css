@@ -1,0 +1,184 @@
+/* body {
+    font-family: Arial, sans-serif;
+    background-color: #71a4d6;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.title{
+    color:#decccc
+}
+.container {
+    text-align: center;
+    background: #111212;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(71, 68, 68, 0.1);
+}
+
+
+.quote-container {
+    margin-bottom: 20px;
+}
+
+#quote-text {
+    font-size: 1.5rem;
+    color: #f5eeee;
+}
+
+#quote-author {
+    font-size: 1.2rem;
+    color: #bee3f8;
+    margin-top: 10px;
+}
+
+button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+footer {
+    margin-top: 20px;
+    color: #aaa;
+} */
+
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #26323b;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat; 
+   background-color: #5a87b0;
+   color: #f4f4f4;
+}
+
+.quote-container {
+    animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; transform: translateY(-20px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+
+@media (max-width: 600px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    #quote-text {
+        font-size: 1.4rem;
+    }
+
+    .container {
+        padding: 25px;
+        margin: 10px;
+    }
+}
+button {
+    background: linear-gradient(45deg, #007bff, #0056b3);
+    color: #f4eded;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 1.1rem;
+    transition: background 0.3s ease;
+}
+
+button:hover {
+  
+    background: linear-gradient(45deg, #0056b3, #0066cc);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+button:active {
+    transform: scale(0.95);
+}
+button:focus {
+    outline: 2px solid #007bff; /* Visible focus state for accessibility */
+}
+
+
+h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5rem;
+    color: #acb1b7;
+}
+
+#quote-text {
+    font-size: 1.8rem;
+    line-height: 1.4;
+    font-style: italic;
+    margin-bottom: 10px;
+    color: #333;    
+}
+
+#quote-author {
+    font-size: 1.4rem;
+    color: #524848;
+    margin-top: 15px;
+    text-align: right;
+}
+.container {
+    text-align: center;
+    background: #171717;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    max-width: 600px;
+    margin: 20px;
+}
+
+.quote-container {
+    padding: 20px;
+    background: #fbf8f8;
+    border-left: 4px solid #007bff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+<button id="generate-quote"><i class="fas fa-quote-right"></i> Generate Quote</button>
+#quote-text::before, #quote-text::after {
+    content: '"';
+    font-size: 2rem;
+    color: #007bff;
+    vertical-align: middle;
+}
+
+footer {
+    margin-top: 20px;
+    color: #fff;
+    background: linear-gradient(135deg, #007bff, #0056b3);
+    padding: 10px 0;
+    border-radius: 0 0 15px 15px;
+}
+.quote-container:hover {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    transform: scale(1.02);
+    transition: transform 0.2s ease-in-out;
+}
+button {
+    cursor: url('custom-cursor.png'), auto;
+}
